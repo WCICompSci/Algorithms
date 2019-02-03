@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 //solution for coci 06 regional firefly
 
-public class linesweep {
+public class line_sweep {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
