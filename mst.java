@@ -3,7 +3,7 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 //solution for ccc 02 stage 2 connect the campus
 
-public class bfs {
+public class mst {
 
 	static double getDistance(int x, int y, int x2, int y2) {
 		return Math.sqrt(Math.pow(y2-y, 2)+Math.pow(x2-x, 2));
