@@ -1,7 +1,7 @@
 import java.util.Scanner;
 //solution for ccc 00 s4 golf
 
-public class ccc00s4 {
+public class dp {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
