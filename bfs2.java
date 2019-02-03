@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.StringTokenizer;
 //solution for shortest path
 
-public class graph1p2 {
+public class bfs2 {
 	
 	public static void main(String[] args) {
 		FastReader in = new FastReader();
