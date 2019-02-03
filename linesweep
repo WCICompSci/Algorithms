@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-//solution for coci '06 regional firefly
+//solution for coci 06 regional firefly
 
 public class linesweep {
 
