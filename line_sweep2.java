@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Scanner;
 //solution for ccc 14 s4 tinted glass window
 
-public class ccc14s4 {
+public class line_sweep2 {
 	static class line implements Comparable<line> {
 		int tint;
 		int x;
