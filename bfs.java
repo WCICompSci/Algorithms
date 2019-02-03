@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.LinkedList;
-public class bfs3 {
+public class bfs {
 //solution for ccc 10 j5 knight hop
 
 	public static void main(String[] args) {
