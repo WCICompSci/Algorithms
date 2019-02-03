@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.StringTokenizer;
 //solution for ccc 07 s5 bowling for numbers
 
-public class ccc07s5 {
+public class dp_with_prefix_sum_array {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
