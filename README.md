@@ -17,7 +17,7 @@ Problem: Find the minimum distance between two points on a matrix
   
   **Depth First Search (DFS)**
 Problem: Find the minimum distance between two points on a tree
-  1. Start with an graph array of size n. This will store the nodes
+  1. Start with an graph array. This will store the nodes
   2. Initialize a parent array. This will hold the parent or ancestor of each node on the tree.
      The parent of the root node will be 0. Set all values in parent array to 0
   3. Initialize a distance array and set all values to 0
@@ -44,3 +44,17 @@ Problem: Find the minimum distance between two points on a tree
      in the adjacency matrix. If there is an edge, add a new Path to the queue, with the distance of the current node plus 1
      and the node of the index in the adjacnecy matrix
   10. Output the weight of the desired end position
+
+  **Dynamic Programming (DP)**
+Problem: Find the minimum number of values in an array to evenly add up to a desired value, if possible
+  1. Input the desired value and the number of values
+  2. Create an array that stores the values. Input the values
+  3. Create a dp array. This will be used to store the minimum number of values to get to each index between 0 and the desired value
+  4. Fill the dp array with a maximum value
+  5. Set the beginning value of the dp array to 0, representing a distance of 0 from itself
+  6. Create a nested for loop that iterates i through the numbers to the desired value and then j through the numbers to the
+     number of values. If the difference between i and the jth value in the value array is greater than or equal to 0, set the ith value
+     of the dp array to the minimum between itself and the difference between i and the jth value's index in the dp array plus 1 
+     value array 
+  7. If the the desired value's index in the dp array is equal to the maximum value, output that the problem is not possible.
+     Otherwise, output the desired value's index in the dp array
