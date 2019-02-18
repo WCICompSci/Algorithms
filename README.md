@@ -2,8 +2,7 @@
 
 **Breadth First Search (BFS)**
 Problem: Find the minimum distance between two points on a matrix
-  1. Start with a matrix. Input the size of the matrix. 
-     This will store the number of steps each coordinate is from the beginning coordinate
+  1. Start with a matrix. Input the size of the matrix. This will store the number of steps each coordinate is from the beginning coordinate
   2. Input a beginning x and y coordinate
   3. Fill the matrix with a maximum value
   4. Set the beginning coordinate to 0 in the matrix, representing 0 steps from itself
@@ -11,8 +10,7 @@ Problem: Find the minimum distance between two points on a matrix
   6. Add the beginning x and y values to their respective queues
   7. Run a while loop until the queues are empty
   8. Get a value from both queues and assign them to temporary variables
-  9. Check every possible direction using if statements. If the direction is traversable, add their coordiantes to the queues and set the
-     step value in its position in the matrix as the step of the current position plus 1
+  9. Check every possible direction using if statements. If the direction is traversable, add their coordiantes to the queues and set the step value in its position in the matrix as the step of the current position plus 1
   10. Output the value in the step matrix at the desired end position
   
   **Depth First Search (DFS)**
@@ -23,8 +21,7 @@ Problem: Find the minimum distance between two points on a tree
   3. Initialize a distance array and set all values to 0
   4. Create a dfs method
   5. Iterate through the node values of the graph array
-  6. If the node is not the root, set the parent of the node as the root. Set the distance of the current node to the distance of the
-     root plus 1
+  6. If the node is not the root, set the parent of the node as the root. Set the distance of the current node to the distance of the root plus 1
   7. Recur the dfs method
   8. In the main class, dfs the root node
   9. Output the distance of the desired end position
@@ -39,10 +36,7 @@ Problem: Find the minimum distance between two points on a tree
   6. Add a new Path object to the queue list with a node 0 and weight 0
   7. Run a while loop until the queue is empty
   8. Get an the node and weight from an object from the queue and assign it to temporary variables
-  9. If the weight from the queue is less than the weight of the node in the weight array, set the weight of the node
-     in the weight array to that of the temporary variable. Iterate through the values on the row of the index of the node
-     in the adjacency matrix. If there is an edge, add a new Path to the queue, with the distance of the current node plus 1
-     and the node of the index in the adjacnecy matrix
+  9. If the weight from the queue is less than the weight of the node in the weight array, set the weight of the node in the weight array to that of the temporary variable. Iterate through the values on the row of the index of the node in the adjacency matrix. If there is an edge, add a new Path to the queue, with the distance of the current node plus 1 and the node of the index in the adjacnecy matrix
   10. Output the weight of the desired end position
 
   **Dynamic Programming (DP)**
@@ -52,9 +46,18 @@ Problem: Find the minimum number of values in an array to evenly add up to a des
   3. Create a dp array. This will be used to store the minimum number of values to get to each index between 0 and the desired value
   4. Fill the dp array with a maximum value
   5. Set the beginning value of the dp array to 0, representing a distance of 0 from itself
-  6. Create a nested for loop that iterates i through the numbers to the desired value and then j through the numbers to the
-     number of values. If the difference between i and the jth value in the value array is greater than or equal to 0, set the ith value
-     of the dp array to the minimum between itself and the difference between i and the jth value's index in the dp array plus 1 
-     value array 
+  6. Create a nested for loop that iterates i through the numbers to the desired value and then j through the numbers to the number of values. If the difference between i and the jth value in the value array is greater than or equal to 0, set the ith value of the dp array to the minimum between itself and the difference between i and the jth value's index in the dp array plus 1 value array 
   7. If the the desired value's index in the dp array is equal to the maximum value, output that the problem is not possible.
      Otherwise, output the desired value's index in the dp array
+     
+   **Dynamic Programming with Prefix Sum Array (DP w/ PSA)**
+  Problem: Given an array of a given number of values in which a given number of adjacent values could be "taken" and removed a given number of times, find the maximum value sum
+  1. Input the size of the array n, the number of adjacent values w, and the number of times adjacent values could be taken k
+  2. Initialize a value array and a psa array, set the size to n, input values
+  3. Initialize a dp matrix, set the size to n by k
+  4. Set psa array as the psa of the previous index plus the value in the value array
+  5. Create a nested for loop that iterates through the dp matrix, with i iterating to n and j iterating to k. To reduce required memory  and time, we will be checking the values from left to right. Set the dp of i plus w by j plus 1 to the maximum between itself and the dp of i by j plus the psa of i plus w plus 1 minus the psa of i minus 1. Set the dp of i plus 1 by j to the maximum between itself and the dp of i by j. The reason for this is to check every possibility of take or not take that can be done to each part of the array. If the point in the array is taken, the i value becomes the i plus the size of the part that is taken, and the j increases by 1, as we used up a time. Otherwise, it is just i plus 1, as we are going from left to right. 
+  6. Initialize variable answer, set as 0
+  7. Create for loop that iterates a to n and b to k. Set answer to the maximum between itself and the dp of a by b
+  8. Output the answer variable
+     
