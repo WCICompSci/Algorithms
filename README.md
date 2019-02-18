@@ -41,17 +41,17 @@ Problem: Find the minimum distance between two points on a tree
 
   **Dynamic Programming (DP)**
 Problem: Find the minimum number of values in an array to evenly add up to a desired value, if possible
-  1. Input the desired value and the number of values
+  1. Input the desired value d and the number of values n
   2. Create an array that stores the values. Input the values
-  3. Create a dp array. This will be used to store the minimum number of values to get to each index between 0 and the desired value
+  3. Create a dp array. This will be used to store the minimum number of values to get to each index between 0 and d
   4. Fill the dp array with a maximum value
   5. Set the beginning value of the dp array to 0, representing a distance of 0 from itself
-  6. Create a nested for loop that iterates i through the numbers to the desired value and then j through the numbers to the number of values. If the difference between i and the jth value in the value array is greater than or equal to 0, set the ith value of the dp array to the minimum between itself and the difference between i and the jth value's index in the dp array plus 1 value array 
-  7. If the the desired value's index in the dp array is equal to the maximum value, output that the problem is not possible.
-     Otherwise, output the desired value's index in the dp array
+  6. Create a nested for loop that iterates i through the numbers to d and then j through the numbers to the number of values. If the difference between i and the jth value in the value array is greater than or equal to 0, set the ith value of the dp array to the minimum between itself and the difference between i and the jth value's index in the dp array plus 1 value array. This way, all possibilities are tried and the one that is the minimum is stored 
+  7. If the the dth value of the dp array is equal to the maximum value, output that the problem is not possible.
+     Otherwise, output the dth value in the dp array
      
    **Dynamic Programming with Prefix Sum Array (DP w/ PSA)**
-  Problem: Given an array of a given number of values in which a given number of adjacent values could be "taken" and removed a given number of times, find the maximum value sum
+  Problem: Given an array of values in which a given number of adjacent values could be "taken" and removed a given number of times, find the maximum value sum
   1. Input the size of the array n, the number of adjacent values w, and the number of times adjacent values could be taken k
   2. Initialize a value array and a psa array, set the size to n, input values
   3. Initialize a dp matrix, set the size to n by k
@@ -61,3 +61,12 @@ Problem: Find the minimum number of values in an array to evenly add up to a des
   7. Create for loop that iterates a to n and b to k. Set answer to the maximum between itself and the dp of a by b
   8. Output the answer variable
      
+  **Sweep Line**
+Problem: Given a 2d grid the alternates between an obstacle of a given height vertically coming from the bottom and one from the top, starting with one from the bottom, find the minimum number of obstacle components that must be hit when going left to right, as well as the number of occurrence of this minimum
+  1. Input n, the number of obstacles and h, the height of the grid
+  2. Create a one-dimensional array to represent the grid. The array can represent it because only the vertical values are significant to the problem, and using a smaller set of data allows us to reduce memory and time
+  3. Set a start variable to half of n+1
+  4. Iterate to n, alternate between adding 1 to the index at h minus inputted number and subtracting 1 from the index at inputted number. This way, when the line is swept through from bottom to top, it loses 1 every time it passes an upwards facing obstacle and gains one every time it comes onto a downwards facing obstacle
+  5. Set a variable min as a maximum value, this will store the minimum number of obstacles that need to be hit. Set a variable num as 0, this will store the number of rows where the minimum is hit
+  6. Iterate i to h. Add the ith term of the array to count. If count is lss than min, set min to count and num to 0. If count equals min, increase num by 1
+  7. Output the min and num variables
