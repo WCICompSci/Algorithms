@@ -26,8 +26,8 @@ Problem: Find the minimum distance between two points on a tree
   8. In the main class, dfs the root node
   9. Output the distance of the desired end position
   
-  **Dijkstra**
- Problem: Find the distance between two nodes of the least weight
+  **Dijkstra's Shortest Path**
+ Problem: Find the distance between two nodes of the least weight in a connected and undirected graph
   1. Create an adjacency matrix that represents the edges of the nodes. Input.
   2. Create a weight array that holds the minimum weight of each node from the beginning node
   3. Fill the weight array with a maximum value
@@ -60,6 +60,9 @@ Problem: Find the minimum number of values in an array to evenly add up to a des
   6. Initialize variable answer, set as 0
   7. Create for loop that iterates a to n and b to k. Set answer to the maximum between itself and the dp of a by b
   8. Output the answer variable
+  
+  **Kruskal's Minimum Spanning Tree**
+Problem: *To be written*
      
   **Sweep Line**
 Problem: Given a 2d grid the alternates between an obstacle of a given height vertically coming from the bottom and one from the top, starting with one from the bottom, find the minimum number of obstacle components that must be hit when going left to right, as well as the number of occurrence of this minimum
