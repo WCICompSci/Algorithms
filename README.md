@@ -61,8 +61,23 @@ Problem: Find the minimum number of values in an array to evenly add up to a des
   7. Create for loop that iterates a to n and b to k. Set answer to the maximum between itself and the dp of a by b
   8. Output the answer variable
   
-  **Kruskal's Minimum Spanning Tree**
-Problem: *To be written*
+  **Kruskal's Minimum Spanning Tree (Kruskal's MST)**
+Problem: Given an unconnected graph, find the minimal number of edges to add and the lengths of the edges to create a completely connected graph. Find all solutions if more than one
+  1. Create Path class with node, parent, and distance variable. Initialize with contructor and implement comparable method that compares distance. If difference in distance is greater than 0, return 1. If difference in distance is less than 0, return -1. Otherwise, return 0
+  2. Input number of nodes and x and y positions of nodes to and array that stores x coordinates and y coordinates
+  3. Initialize list of arrays, to store edges between nodes
+  4. Input existing edges
+  5. Create a priority queue that stores Paths. Store a Path with 0 node, 0 parents, and 0 distance. This will be the beginning node
+  6. Create a boolean array to store whether a node has been visited or not
+  7. Initialize a list to store output
+  8. Create a variable to store answer. Set answer to 0
+  9. Run a while loop until the priority queue is empty
+  10. Assign the node, parents, and distance from a Path in the priority queue to temporary variables
+  11. If the current Path is true in the visited array, continue to while loop
+  12. Otherwise, add the distance to the answer. Add the Path to the output list. Set the node in the visited array to true. 
+  13. Iterate through nodes. If the node is not visited, calculate distance between current node and unvisited node using pythagorean theorem between x and y coordinates of the two nodes.
+  14. Iterate through the list of the current node's index in the list array. If thge value in the list is not visited, add a new Path with 0 distance, the current node as the parent, and the unvisited node as the node
+  15. Output the answer variable. Iterate through the number of nodes. If the distance of the output array of the node is not 0, output its node and parent
      
   **Sweep Line**
 Problem: Given a 2d grid the alternates between an obstacle of a given height vertically coming from the bottom and one from the top, starting with one from the bottom, find the minimum number of obstacle components that must be hit when going left to right, as well as the number of occurrence of this minimum
