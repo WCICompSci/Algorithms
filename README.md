@@ -80,7 +80,7 @@ Problem: Given an unconnected graph, find the minimal number of edges to add and
   15. Output the answer variable. Iterate through the number of nodes. If the distance of the output array of the node is not 0, output its node and parent
      
   **Sweep Line**
-Problem: Given a 2d grid the alternates between an obstacle of a given height vertically coming from the bottom and one from the top, starting with one from the bottom, find the minimum number of obstacle components that must be hit when going left to right, as well as the number of occurrence of this minimum
+Problem: Given a 2d grid that alternates between an obstacle of a given height vertically coming from the bottom and one from the top, starting with one from the bottom, find the minimum number of obstacle components that must be hit when going left to right, as well as the number of occurrence of this minimum
   1. Input n, the number of obstacles and h, the height of the grid
   2. Create a one-dimensional array to represent the grid. The array can represent it because only the vertical values are significant to the problem, and using a smaller set of data allows us to reduce memory and time
   3. Set a start variable to half of n+1
