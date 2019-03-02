@@ -1,6 +1,6 @@
 # Algorithms
 
-**Breadth First Search (BFS)**
+## Breadth First Search (BFS)
 Problem: Find the minimum distance between two points on a matrix
   1. Start with a matrix. Input the size of the matrix. This will store the number of steps each coordinate is from the beginning coordinate
   2. Input a beginning x and y coordinate
@@ -13,7 +13,7 @@ Problem: Find the minimum distance between two points on a matrix
   9. Check every possible direction using if statements. If the direction is traversable, add their coordiantes to the queues and set the step value in its position in the matrix as the step of the current position plus 1
   10. Output the value in the step matrix at the desired end position
   
-  **Depth First Search (DFS)**
+## Depth First Search (DFS)
 Problem: Find the minimum distance between two points on a tree
   1. Start with an graph array. This will store the nodes
   2. Initialize a parent array. This will hold the parent or ancestor of each node on the tree.
@@ -26,7 +26,7 @@ Problem: Find the minimum distance between two points on a tree
   8. In the main class, dfs the root node
   9. Output the distance of the desired end position
   
-  **Dijkstra's Shortest Path**
+## Dijkstra's Shortest Path
  Problem: Find the distance between two nodes of the least weight in a connected and undirected graph
   1. Create an adjacency matrix that represents the edges of the nodes. Input.
   2. Create a weight array that holds the minimum weight of each node from the beginning node
@@ -39,7 +39,7 @@ Problem: Find the minimum distance between two points on a tree
   9. If the weight from the queue is less than the weight of the node in the weight array, set the weight of the node in the weight array to that of the temporary variable. Iterate through the values on the row of the index of the node in the adjacency matrix. If there is an edge, add a new Path to the queue, with the distance of the current node plus 1 and the node of the index in the adjacnecy matrix
   10. Output the weight of the desired end position
 
-  **Dynamic Programming (DP)**
+## Dynamic Programming (DP)
 Problem: Find the minimum number of values in an array to evenly add up to a desired value, if possible
   1. Input the desired value d and the number of values n
   2. Create an array that stores the values. Input the values
@@ -50,7 +50,7 @@ Problem: Find the minimum number of values in an array to evenly add up to a des
   7. If the the dth value of the dp array is equal to the maximum value, output that the problem is not possible.
      Otherwise, output the dth value in the dp array
      
-   **Dynamic Programming with Prefix Sum Array (DP w/ PSA)**
+## Dynamic Programming with Prefix Sum Array (DP w/ PSA)
   Problem: Given an array of values in which a given number of adjacent values could be "taken" and removed a given number of times, find the maximum value sum
   1. Input the size of the array n, the number of adjacent values w, and the number of times adjacent values could be taken k
   2. Initialize a value array and a psa array, set the size to n, input values
@@ -61,7 +61,7 @@ Problem: Find the minimum number of values in an array to evenly add up to a des
   7. Create for loop that iterates a to n and b to k. Set answer to the maximum between itself and the dp of a by b
   8. Output the answer variable
   
-  **Kruskal's Minimum Spanning Tree (Kruskal's MST)**
+## Kruskal's Minimum Spanning Tree (Kruskal's MST)
 Problem: Given an unconnected graph, find the minimal number of edges to add and the lengths of the edges to create a completely connected graph. Find all solutions if more than one
   1. Create Path class with node, parent, and distance variable. Initialize with contructor and implement comparable method that compares distance. If difference in distance is greater than 0, return 1. If difference in distance is less than 0, return -1. Otherwise, return 0
   2. Input number of nodes and x and y positions of nodes to and array that stores x coordinates and y coordinates
@@ -79,7 +79,7 @@ Problem: Given an unconnected graph, find the minimal number of edges to add and
   14. Iterate through the list of the current node's index in the list array. If thge value in the list is not visited, add a new Path with 0 distance, the current node as the parent, and the unvisited node as the node
   15. Output the answer variable. Iterate through the number of nodes. If the distance of the output array of the node is not 0, output its node and parent
      
-  **Sweep Line**
+## Sweep Line
 Problem: Given a 2d grid that alternates between an obstacle of a given height vertically coming from the bottom and one from the top, starting with one from the bottom, find the minimum number of obstacle components that must be hit when going left to right, as well as the number of occurrence of this minimum
   1. Input n, the number of obstacles and h, the height of the grid
   2. Create a one-dimensional array to represent the grid. The array can represent it because only the vertical values are significant to the problem, and using a smaller set of data allows us to reduce memory and time
