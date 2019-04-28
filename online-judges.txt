@@ -1,4 +1,20 @@
-List of useful online judges
+ONLINE JUDGES
+Complete collection of useful online judges in preparation for competitions under the IOI
+
+:thumbsup: - Recommended
+
+:triangular_flag_on_post: - Official National
+
+:school: - University Hosted
+
+Languages recognised by the IOI are 
+- OpenJDK Java
+- FPC Free Pascal Compiler
+- C/C++
+- Python 2, Python3
+(See https://ioi2018.jp/competition for further details)
+
+All online judges accept C, C++ and Java, most online judges accept Python and Pascal, some online judges will accept languages outside of the IOI such as C#, Ruby, etc
 
 ============
 
