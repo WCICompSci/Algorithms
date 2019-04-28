@@ -1,0 +1,116 @@
+List of useful online judges
+
+============
+
+Your Location
+:flag_ca: Canada
+CCC Grader https://cccgrader.com/home.php (English/Français) :triangular_flag_on_post: :school: 
+DMOJ https://dmoj.ca/ (English) :thumbsup:
+WCIPEG https://wcipeg.com/main (English) :thumbsup:
+
+:globe_with_meridians: International
+SphereOJ https://www.spoj.com/ (English/Polskie/Português/Tiếng Việt)
+ICPC https://icpcarchive.ecs.baylor.edu/index.php (English)
+
+============
+MASTER TIER
+
+:flag_cn: China
+POJ http://poj.org/ (English/简体中文/Português/Español/한국어/日本語) :thumbsup: :school:
+UOJ http://uoj.ac/ (简体中文/English) :thumbsup: 
+ZOJ http://acm.zju.edu.cn/onlinejudge/ (English) :school:
+
+:flag_kr: Republic of Korea
+Baekjoon https://www.acmicpc.net/ (한국어)
+ojuz https://oj.uz/ (한국어/English) :thumbsup:
+
+============
+VERY VERY DIFFICULT TIER
+
+:flag_jp: Japan
+Aizu http://judge.u-aizu.ac.jp/onlinejudge/ (日本語/English) :thumbsup: 
+AtCoder http://atcoder.jp/ (日本語/English) :thumbsup:
+
+:flag_pl: Poland
+Olimpiada Informatyczna https://oi.edu.pl/ (Polskie) :triangular_flag_on_post: :school:
+Szkopul https://szkopul.edu.pl/ (English/Polskie) :thumbsup: 
+
+:flag_ru: Russia
+CodeForces http://codeforces.com/ (Pусский/English) :thumbsup:
+Timus http://acm.timus.ru/ (Pусский/English)
+
+============
+VERY DIFFICULT TIER
+
+:flag_hr:  Croatia 
+COCI http://hsin.hr/coci/ (English) :thumbsup: :triangular_flag_on_post: 
+
+:flag_ro:  Romania 
+infoarena https://infoarena.ro/ (Română) :thumbsup:
+
+:flag_us:  United States of America
+Top Coder https://www.topcoder.com/ (English/简体中文)
+USACO http://www.usaco.org/ (English/հայերեն/България/Français/Pусский/Español) :thumbsup: :triangular_flag_on_post:
+
+============
+DIFFICULT TIER
+
+:flag_hk: Hong Kong
+HKOI https://judge.hkoi.org/login (繁體中文/English) :triangular_flag_on_post: 
+
+:flag_in: India
+CodeChef https://www.codechef.com/ (English) :thumbsup: 
+HackerRank https://www.hackerrank.com/ (English)
+IARCS https://www.iarcs.org.in/inoi/online-study-material/ (English) :triangular_flag_on_post:
+
+:flag_lv: Latvia
+Olimps http://olimps.lio.lv/ (Latviešu valoda)
+
+:flag_es: Spain 
+UVa https://uva.onlinejudge.org/ (English) :school:
+
+:flag_tw: Taiwan
+NTU http://acm.csie.org/ntujudge/index.php (繁體中文) :school:
+
+:flag_ua: Ukraine 
+ACM http://acm.lviv.ua/fusion/news.php (Українська) :school:
+
+============
+MEDIUM TIER
+
+:flag_ca: Canada
+CCC Grader https://cccgrader.com/home.php (English/Français) :triangular_flag_on_post: :school:
+DMOJ https://dmoj.ca/ (English) :thumbsup: 
+WCIPEG https://wcipeg.com/main (English) :thumbsup: 
+
+:flag_br: Brazil
+URI https://www.urionlinejudge.com.br/judge/en/login (English/Português/Español) 
+
+:flag_bg: Bulgaria
+SoftUni https://judge.softuni.bg/ (English/български)
+
+============
+EASY TIER 
+
+:flag_eg: Egypt 
+A2OJ https://a2oj.com/ (English)
+
+:flag_id: Indonesia
+PandaOJ https://pandaoj.com/problems (English) 
+
+:flag_ir: Iran 
+Arbiter http://acm.sharif.edu/ (English/فارسی) :school: Disabled
+
+============
+BASIC TIER 
+
+:flag_au: Australia
+AIOC http://orac.amt.edu.au/ (English) :thumbsup: :triangular_flag_on_post: 
+
+:flag_bd: Bangladesh 
+LightOJ http://lightoj.com/login_main.php (English)
+
+:flag_mx: Mexico
+omegaUp https://omegaup.com/ (Español/English/Português)
+
+============
