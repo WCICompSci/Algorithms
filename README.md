@@ -1,3 +1,11 @@
+# Competitive Programming Algorithms
+Compiled repository of various algorithms common in the IOI or national/subnational equivalents. Examples taken from AC solutions on [DMOJ](https://dmoj.ca/), [WCIPEG](https://wcipeg.com/main), [Codeforces](http://codeforces.com/), and other online judges (see [this list of competitive programming platforms/online judges](online-judges.txt)).
+
+**Contributors! To contribute:**
+ 1. Fork repository
+ 2. Add file and edit README.md
+ 3. Open a pull request
+
 # Algorithms
 
 ## Breadth First Search (BFS)
